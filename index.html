@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maintenance Mode</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+  <div class="text-center p-6 bg-white shadow-lg rounded-2xl max-w-md">
+    <!-- Logo -->
+    <img src="http://localhost:3002/images/logo.png" alt="Logo" class="mx-auto w-48 mb-6">
+
+    <!-- Heading -->
+    <h1 class="text-3xl font-bold text-gray-800 mb-2">We'll Be Back Soon!</h1>
+    <p class="text-gray-600 mb-6">
+      Our site is currently under maintenance. We’re working hard to improve your experience.  
+      Please check back later.
+    </p>
+
+    <!-- Contact -->
+    <p class="text-gray-700">
+      Need to reach us?  
+      <a href="mailto:support@example.com" class="text-blue-600 font-medium hover:underline">support@example.com</a>
+    </p>
+
+    <!-- Footer -->
+    <div class="mt-6 text-sm text-gray-500">
+      &copy; <span id="year"></span> Your Company. All rights reserved.
+    </div>
+  </div>
+
+  <script>
+    // Auto-update year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
